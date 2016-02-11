@@ -10,6 +10,8 @@ import org.apache.commons.io.FileUtils;
 
 
 
+
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -20,6 +22,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+
 
 
 
@@ -40,6 +44,8 @@ public class RoomScheduler {
  public static void main(String[] args) {
  Boolean end = false;
  ArrayList<Room> rooms = new ArrayList<Room>();
+ ArrayList<Meeting> meetings = new ArrayList<Meeting>();
+
 
 
  while (!end) {
@@ -61,6 +67,26 @@ public class RoomScheduler {
  case 5:
  System.out.println(listRooms(rooms));
  break;
+ case 6:
+	 System.out.println(saveRoomJSON(rooms));
+	 break;
+ case 7:
+	 System.out.println(saveScheduleJSON(rooms));
+	 break;
+ case 8:
+	 //here i changed room to meeting because in method it is given meeting
+	 System.out.println(saveMeetingJSON(meetings));
+	 break;
+// case 9:
+//	 System.out.println(importMeetingJSON(rooms));
+//	 break;
+// case 10:
+//	 System.out.println(importScheduleJSON(rooms));
+//	 break;
+// case 11:
+//	 System.out.println(importRoomJSON(rooms));
+//	 break;
+//	 
  }
 
 
@@ -70,7 +96,10 @@ public class RoomScheduler {
  }
 
 
- protected static String listSchedule(ArrayList<Room> roomList) {
+
+
+
+protected static String listSchedule(ArrayList<Room> roomList) {
  String roomName = getRoomName();
  System.out.println(roomName + " Schedule");
  System.out.println("---------------------");
@@ -91,6 +120,9 @@ public class RoomScheduler {
  System.out.println("  3 - Schedule a room");
  System.out.println("  4 - List Schedule");
  System.out.println("  5 - List Rooms");
+ System.out.println(" 6 - saveRoomJSON"); 
+ System.out.println(" 7 - save schedule");
+ System.out.println(" 8 - save meeting");
  System.out.println("Enter your selection: ");
 
 
@@ -208,7 +240,7 @@ public class RoomScheduler {
  return keyboard.next();
  }
  
- protected static void saveRoomJSON(ArrayList<Room> roomList ) throws JSONException {
+ protected static String saveRoomJSON(ArrayList<Room> roomList ) {
      JSONArray jsonArray = new JSONArray();
 
 
@@ -223,17 +255,18 @@ public class RoomScheduler {
    
      }
      //check file exists or not 
-     File file=new File("yourpath/fromJSON.csv");
+     File file=new File("C://Users/Murali-Honey/Downloads/roomfromJSON.csv");
      String csv = CDL.toString(jsonArray);
      try {
  FileUtils.writeStringToFile(file, csv);
  } catch (IOException e) {
  e.printStackTrace();
  }
+     return "it is priting this one";
    
  }
  
- protected static void saveScheduleJSON(ArrayList<Room> roomList ) throws JSONException {
+ protected static String saveScheduleJSON(ArrayList<Room> roomList )  {
      JSONArray jsonArray = new JSONArray();
 
 
@@ -251,16 +284,17 @@ public class RoomScheduler {
    
      }
      //check file exists or not
-     File file=new File("yourpath/fromJSON.csv");
+     File file=new File("C://Users/Murali-Honey/Downloads/fromJSON.csv");
      String csv = CDL.toString(jsonArray);
      try {
  FileUtils.writeStringToFile(file, csv);
  } catch (IOException e) {
  e.printStackTrace();
  }
+	return csv;
    
  }
- protected static void saveMeetingJSON(ArrayList<Meeting> meetings ) throws JSONException {
+ protected static String saveMeetingJSON(ArrayList<Meeting> meetings ) {
      JSONArray jsonArray = new JSONArray();
 
 
@@ -276,18 +310,19 @@ public class RoomScheduler {
      }
      //this will save as CSV file if your given path
      //check this file exists or not
-     File file=new File("yourpath/fromJSON.csv");
+     File file=new File("C://Users/Murali-Honey/Downloads/fromJSON.csv");
      String csv = CDL.toString(jsonArray);
      try {
  FileUtils.writeStringToFile(file, csv);
  } catch (IOException e) {
  // TODO Auto-generated catch block
  e.printStackTrace();
- }  }
+ }
+	return "KK";  }
  
  protected static ArrayList<Meeting> importMeetingJSON(String filePath) throws Exception {
  //check for a valid file path
- CSVReader readMeeting = new CSVReader(new FileReader(filePath));
+CSVReader readMeeting = new CSVReader(new FileReader(filePath));
  ArrayList<Meeting> meetings=new ArrayList<Meeting>();
  String [] nextLine;
  //ignoring first line
@@ -299,14 +334,16 @@ public class RoomScheduler {
      meetings.add(meeting);
       }
      readMeeting.close();
+     
  return meetings;
    
  }
 
 
+
  protected static ArrayList<Room> importScheduleJSON(String filePath) throws Exception {
  //check for a valid file path
- CSVReader readMeeting = new CSVReader(new FileReader(filePath));
+CSVReader readMeeting = new CSVReader(new FileReader(filePath));
  ArrayList<Room> rooms=new ArrayList<Room>();
  String [] nextLine;
  //ignoring first line
