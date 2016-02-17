@@ -1,6 +1,9 @@
 package com.marist.mscs721;
 
 import org.apache.commons.io.FileUtils;
+import java.io.*;
+import java.sql.SQLException;
+import java.util.*;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -18,6 +21,8 @@ import org.json.*;
 import au.com.bytecode.opencsv.CSVReader;
 
 public class RoomScheduler {
+	static java.util.logging.Logger log = java.util.logging.Logger.getLogger(RoomScheduler.class.getName());
+	   
 	protected static Scanner keyboard = new Scanner(System.in);
 
 	public static void main(String[] args) {
@@ -63,7 +68,9 @@ public class RoomScheduler {
 			// case 11:
 			// System.out.println(importRoomJSON(rooms));
 			// break;
-			//
+			default:
+				System.out.println("Invalid case selection");
+				break;
 			}
 
 		}
@@ -194,7 +201,6 @@ public class RoomScheduler {
 		for (int i = 0; i < roomList.size(); i++) {
 			JSONObject roomDetails = new JSONObject();
 			roomDetails.put("room_capacity", roomList.get(i).getCapacity());
-			// roomDetails.put("room_meetings", roomList.get(i).getMeetings());
 			roomDetails.put("room_name", roomList.get(i).getName());
 
 			jsonArray.put(roomDetails);

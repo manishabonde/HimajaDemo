@@ -3,27 +3,27 @@ package com.marist.mscs721;
 import java.sql.Timestamp;
 
 public class Meeting {
-	
+
 	private Timestamp startTime = null;
 	private Timestamp stopTime = null;
 	private String subject = null;
 
-	
-	public Meeting(Timestamp newStartTime, Timestamp newEndTime, String newSubject) {
+	public Meeting(Timestamp newStartTime, Timestamp newEndTime,
+			String newSubject) {
 		setStartTime(newStartTime);
 		setStopTime(newEndTime);
 		if (newSubject.isEmpty()) {
 			setSubject("");
-		}
-		else {
+		} else {
 			setSubject(newSubject);
 		}
 	}
 
 	public String toString() {
-		return this.getStartTime().toString() + " - " + this.getStopTime() + ": " + getSubject();
+		return this.getStartTime().toString() + " - " + this.getStopTime()
+				+ ": " + getSubject();
 	}
-	
+
 	public Timestamp getStartTime() {
 		return startTime;
 	}
