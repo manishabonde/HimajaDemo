@@ -1,30 +1,21 @@
 package com.marist.mscs721;
 
 import org.apache.commons.io.FileUtils;
-import java.io.*;
-import java.sql.SQLException;
-import java.util.*;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.sql.Date;
+import java.io.*;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 import org.json.*;
 
 import au.com.bytecode.opencsv.CSVReader;
 
 public class RoomScheduler {
-	static java.util.logging.Logger log = java.util.logging.Logger.getLogger(RoomScheduler.class.getName());
-	   
+
 	protected static Scanner keyboard = new Scanner(System.in);
 
+	// creating room scheduler based on room,meeting,scheduleroom methods
 	public static void main(String[] args) {
 		Boolean end = false;
 		ArrayList<Room> rooms = new ArrayList<Room>();
@@ -59,15 +50,7 @@ public class RoomScheduler {
 				// meeting
 				System.out.println(saveMeetingJSON(meetings));
 				break;
-			// case 9:
-			// System.out.println(importMeetingJSON(rooms));
-			// break;
-			// case 10:
-			// System.out.println(importScheduleJSON(rooms));
-			// break;
-			// case 11:
-			// System.out.println(importRoomJSON(rooms));
-			// break;
+
 			default:
 				System.out.println("Invalid case selection");
 				break;
@@ -77,10 +60,11 @@ public class RoomScheduler {
 
 	}
 
+	// To print the list of scheduled rooms
 	protected static String listSchedule(ArrayList<Room> roomList) {
 		String roomName = getRoomName();
 		System.out.println(roomName + " Schedule");
-		System.out.println("---------------------");
+		System.out.println("------------");
 
 		for (Meeting m : getRoomFromName(roomList, roomName).getMeetings()) {
 			System.out.println(m.toString());
@@ -89,6 +73,7 @@ public class RoomScheduler {
 		return "";
 	}
 
+	// To print the results based on case selection
 	protected static int mainMenu() {
 		System.out.println("Main Menu:");
 		System.out.println("  1 - Add a room");
@@ -104,6 +89,7 @@ public class RoomScheduler {
 		return keyboard.nextInt();
 	}
 
+	// To add rooms and checking the capacity of the rooms
 	protected static String addRoom(ArrayList<Room> roomList) {
 		System.out.println("Add a room:");
 		String name = getRoomName();
@@ -116,6 +102,7 @@ public class RoomScheduler {
 		return "Room '" + newRoom.getName() + "' added successfully!";
 	}
 
+	// To remove the rooms
 	protected static String removeRoom(ArrayList<Room> roomList) {
 		System.out.println("Remove a room:");
 		roomList.remove(findRoomIndex(roomList, getRoomName()));
@@ -123,6 +110,7 @@ public class RoomScheduler {
 		return "Room removed successfully!";
 	}
 
+	// To check the capacity of the room
 	protected static String listRooms(ArrayList<Room> roomList) {
 		System.out.println("Room Name - Capacity");
 		System.out.println("---------------------");
@@ -135,6 +123,8 @@ public class RoomScheduler {
 
 		return roomList.size() + " Room(s)";
 	}
+
+	// Schedule the room if it is available
 
 	protected static String scheduleRoom(ArrayList<Room> roomList) {
 		System.out.println("Schedule a room:");
@@ -190,11 +180,13 @@ public class RoomScheduler {
 		return keyboard.next();
 	}
 
+	// To save the room name to the csv in tabular format
 	protected static String saveToCsv() {
 		System.out.println("Room Name?");
 		return keyboard.next();
 	}
 
+	// Exporting the room details to the JSON files
 	protected static String saveRoomJSON(ArrayList<Room> roomList) {
 		JSONArray jsonArray = new JSONArray();
 
@@ -218,6 +210,7 @@ public class RoomScheduler {
 
 	}
 
+	// Exporting the Scheduling room details to the JSON files
 	protected static String saveScheduleJSON(ArrayList<Room> roomList) {
 		JSONArray jsonArray = new JSONArray();
 
@@ -248,6 +241,7 @@ public class RoomScheduler {
 
 	}
 
+	// Exporting the meeting details to JSON files
 	protected static String saveMeetingJSON(ArrayList<Meeting> meetings) {
 		JSONArray jsonArray = new JSONArray();
 
@@ -267,12 +261,13 @@ public class RoomScheduler {
 		try {
 			FileUtils.writeStringToFile(file, csv);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
 		return "KK";
 	}
 
+	// Importing the meeting details from JSON files
 	protected static ArrayList<Meeting> importMeetingJSON(String filePath)
 			throws Exception {
 		// check for a valid file path
@@ -294,6 +289,8 @@ public class RoomScheduler {
 		return meetings;
 
 	}
+
+	// Importing the scheduling details from JSON files
 
 	protected static ArrayList<Room> importScheduleJSON(String filePath)
 			throws Exception {
@@ -320,6 +317,7 @@ public class RoomScheduler {
 
 	}
 
+	// Importing the room details from JSON files
 	protected static ArrayList<Room> importRoomJSON(String filePath)
 			throws Exception {
 		// check for a valid file path
