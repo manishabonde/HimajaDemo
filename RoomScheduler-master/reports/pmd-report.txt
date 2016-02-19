@@ -1,0 +1,288 @@
+src/com/marist/mscs721/Meeting.java:5:	headerCommentRequirement Required
+src/com/marist/mscs721/Meeting.java:7:	Avoid using redundant field initializer for 'startTime'
+src/com/marist/mscs721/Meeting.java:7:	fieldCommentRequirement Required
+src/com/marist/mscs721/Meeting.java:8:	Avoid using redundant field initializer for 'stopTime'
+src/com/marist/mscs721/Meeting.java:8:	fieldCommentRequirement Required
+src/com/marist/mscs721/Meeting.java:9:	Avoid using redundant field initializer for 'subject'
+src/com/marist/mscs721/Meeting.java:9:	fieldCommentRequirement Required
+src/com/marist/mscs721/Meeting.java:11:	Parameter 'newEndTime' is not assigned and could be declared final
+src/com/marist/mscs721/Meeting.java:11:	Parameter 'newStartTime' is not assigned and could be declared final
+src/com/marist/mscs721/Meeting.java:11:	publicMethodCommentRequirement Required
+src/com/marist/mscs721/Meeting.java:12:	Parameter 'newSubject' is not assigned and could be declared final
+src/com/marist/mscs721/Meeting.java:13:	Overridable method 'setStartTime' called during object construction
+src/com/marist/mscs721/Meeting.java:14:	Overridable method 'setStopTime' called during object construction
+src/com/marist/mscs721/Meeting.java:18:	Overridable method 'setSubject' called during object construction
+src/com/marist/mscs721/Meeting.java:22:	publicMethodCommentRequirement Required
+src/com/marist/mscs721/Meeting.java:27:	publicMethodCommentRequirement Required
+src/com/marist/mscs721/Meeting.java:31:	Parameter 'startTime' is not assigned and could be declared final
+src/com/marist/mscs721/Meeting.java:31:	publicMethodCommentRequirement Required
+src/com/marist/mscs721/Meeting.java:35:	publicMethodCommentRequirement Required
+src/com/marist/mscs721/Meeting.java:39:	Parameter 'stopTime' is not assigned and could be declared final
+src/com/marist/mscs721/Meeting.java:39:	publicMethodCommentRequirement Required
+src/com/marist/mscs721/Meeting.java:43:	publicMethodCommentRequirement Required
+src/com/marist/mscs721/Meeting.java:47:	Parameter 'subject' is not assigned and could be declared final
+src/com/marist/mscs721/Meeting.java:47:	publicMethodCommentRequirement Required
+src/com/marist/mscs721/Room.java:5:	Avoid short class names like Room
+src/com/marist/mscs721/Room.java:5:	headerCommentRequirement Required
+src/com/marist/mscs721/Room.java:7:	fieldCommentRequirement Required
+src/com/marist/mscs721/Room.java:8:	fieldCommentRequirement Required
+src/com/marist/mscs721/Room.java:9:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/marist/mscs721/Room.java:9:	fieldCommentRequirement Required
+src/com/marist/mscs721/Room.java:11:	Parameter 'newCapacity' is not assigned and could be declared final
+src/com/marist/mscs721/Room.java:11:	Parameter 'newName' is not assigned and could be declared final
+src/com/marist/mscs721/Room.java:11:	publicMethodCommentRequirement Required
+src/com/marist/mscs721/Room.java:12:	Overridable method 'setName' called during object construction
+src/com/marist/mscs721/Room.java:17:	Parameter 'newMeeting' is not assigned and could be declared final
+src/com/marist/mscs721/Room.java:17:	publicMethodCommentRequirement Required
+src/com/marist/mscs721/Room.java:21:	publicMethodCommentRequirement Required
+src/com/marist/mscs721/Room.java:25:	Parameter 'name' is not assigned and could be declared final
+src/com/marist/mscs721/Room.java:25:	publicMethodCommentRequirement Required
+src/com/marist/mscs721/Room.java:29:	publicMethodCommentRequirement Required
+src/com/marist/mscs721/Room.java:33:	Parameter 'capacity' is not assigned and could be declared final
+src/com/marist/mscs721/Room.java:33:	publicMethodCommentRequirement Required
+src/com/marist/mscs721/Room.java:37:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/marist/mscs721/Room.java:37:	publicMethodCommentRequirement Required
+src/com/marist/mscs721/Room.java:41:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/marist/mscs721/Room.java:41:	Parameter 'meetings' is not assigned and could be declared final
+src/com/marist/mscs721/Room.java:41:	publicMethodCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:7:	Avoid duplicate imports such as 'java.io.File'
+src/com/marist/mscs721/RoomScheduler.java:8:	Avoid duplicate imports such as 'java.io.FileNotFoundException'
+src/com/marist/mscs721/RoomScheduler.java:8:	Avoid unused imports such as 'java.io.FileNotFoundException'
+src/com/marist/mscs721/RoomScheduler.java:9:	Avoid duplicate imports such as 'java.io.FileReader'
+src/com/marist/mscs721/RoomScheduler.java:10:	Avoid duplicate imports such as 'java.io.IOException'
+src/com/marist/mscs721/RoomScheduler.java:11:	Avoid unused imports such as 'java.sql.Date'
+src/com/marist/mscs721/RoomScheduler.java:14:	Avoid duplicate imports such as 'java.util.ArrayList'
+src/com/marist/mscs721/RoomScheduler.java:15:	Avoid duplicate imports such as 'java.util.List'
+src/com/marist/mscs721/RoomScheduler.java:15:	Avoid unused imports such as 'java.util.List'
+src/com/marist/mscs721/RoomScheduler.java:16:	Avoid duplicate imports such as 'java.util.Scanner'
+src/com/marist/mscs721/RoomScheduler.java:22:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/com/marist/mscs721/RoomScheduler.java:22:	The class 'RoomScheduler' has a Cyclomatic Complexity of 2 (Highest = 10).
+src/com/marist/mscs721/RoomScheduler.java:22:	The class 'RoomScheduler' has a Standard Cyclomatic Complexity of 2 (Highest = 10).
+src/com/marist/mscs721/RoomScheduler.java:22:	This class has too many methods, consider refactoring it.
+src/com/marist/mscs721/RoomScheduler.java:22:	headerCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:24:	fieldCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:26:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/com/marist/mscs721/RoomScheduler.java:26:	Parameter 'args' is not assigned and could be declared final
+src/com/marist/mscs721/RoomScheduler.java:26:	The method 'main' has a Cyclomatic Complexity of 10.
+src/com/marist/mscs721/RoomScheduler.java:26:	The method 'main' has a Standard Cyclomatic Complexity of 10.
+src/com/marist/mscs721/RoomScheduler.java:26:	publicMethodCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:27:	Local variable 'end' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:28:	Found 'DU'-anomaly for variable 'rooms' (lines '28'-'76').
+src/com/marist/mscs721/RoomScheduler.java:28:	Local variable 'rooms' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:29:	Found 'DU'-anomaly for variable 'meetings' (lines '29'-'76').
+src/com/marist/mscs721/RoomScheduler.java:29:	Local variable 'meetings' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:35:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:38:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:41:	System.out.print is used
+src/com/marist/mscs721/RoomScheduler.java:44:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:47:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:50:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:53:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:58:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:70:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:78:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/marist/mscs721/RoomScheduler.java:78:	Found 'UR'-anomaly for variable 'm' (lines '78'-'84').
+src/com/marist/mscs721/RoomScheduler.java:78:	Parameter 'roomList' is not assigned and could be declared final
+src/com/marist/mscs721/RoomScheduler.java:78:	protectedMethodCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:79:	Local variable 'roomName' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:80:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:81:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:83:	Local variable 'm' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:83:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:84:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:90:	protectedMethodCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:91:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:92:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:93:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:94:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:95:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:96:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:97:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:98:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:99:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:100:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:105:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/marist/mscs721/RoomScheduler.java:105:	Parameter 'roomList' is not assigned and could be declared final
+src/com/marist/mscs721/RoomScheduler.java:105:	protectedMethodCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:106:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:107:	Local variable 'name' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:108:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:109:	Local variable 'capacity' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:111:	Local variable 'newRoom' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:117:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/marist/mscs721/RoomScheduler.java:117:	Parameter 'roomList' is not assigned and could be declared final
+src/com/marist/mscs721/RoomScheduler.java:117:	protectedMethodCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:118:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:124:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/marist/mscs721/RoomScheduler.java:124:	Found 'UR'-anomaly for variable 'room' (lines '124'-'129').
+src/com/marist/mscs721/RoomScheduler.java:124:	Parameter 'roomList' is not assigned and could be declared final
+src/com/marist/mscs721/RoomScheduler.java:124:	protectedMethodCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:125:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:126:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:128:	Local variable 'room' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:129:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:132:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:137:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/marist/mscs721/RoomScheduler.java:137:	Parameter 'roomList' is not assigned and could be declared final
+src/com/marist/mscs721/RoomScheduler.java:137:	protectedMethodCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:138:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:139:	Local variable 'name' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:141:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:142:	Local variable 'startDate' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:143:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:144:	Found 'DD'-anomaly for variable 'startTime' (lines '144'-'145').
+src/com/marist/mscs721/RoomScheduler.java:145:	Prefer StringBuffer over += for concatenating strings
+src/com/marist/mscs721/RoomScheduler.java:147:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:148:	Local variable 'endDate' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:149:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:150:	Found 'DD'-anomaly for variable 'endTime' (lines '150'-'151').
+src/com/marist/mscs721/RoomScheduler.java:151:	Prefer StringBuffer over += for concatenating strings
+src/com/marist/mscs721/RoomScheduler.java:153:	Local variable 'startTimestamp' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:155:	Local variable 'endTimestamp' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:157:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:158:	Local variable 'subject' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:160:	Local variable 'curRoom' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:162:	Local variable 'meeting' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:164:	Potential violation of Law of Demeter (object not created locally)
+src/com/marist/mscs721/RoomScheduler.java:169:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/marist/mscs721/RoomScheduler.java:169:	Parameter 'name' is not assigned and could be declared final
+src/com/marist/mscs721/RoomScheduler.java:169:	Parameter 'roomList' is not assigned and could be declared final
+src/com/marist/mscs721/RoomScheduler.java:169:	protectedMethodCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:173:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/marist/mscs721/RoomScheduler.java:173:	Found 'UR'-anomaly for variable 'room' (lines '173'-'177').
+src/com/marist/mscs721/RoomScheduler.java:173:	Parameter 'roomList' is not assigned and could be declared final
+src/com/marist/mscs721/RoomScheduler.java:173:	Parameter 'roomName' is not assigned and could be declared final
+src/com/marist/mscs721/RoomScheduler.java:173:	protectedMethodCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:174:	Found 'DD'-anomaly for variable 'roomIndex' (lines '174'-'180').
+src/com/marist/mscs721/RoomScheduler.java:176:	Local variable 'room' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:177:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:180:	Found 'DD'-anomaly for variable 'roomIndex' (lines '180'-'180').
+src/com/marist/mscs721/RoomScheduler.java:186:	protectedMethodCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:187:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:191:	protectedMethodCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:192:	System.out.println is used
+src/com/marist/mscs721/RoomScheduler.java:196:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/marist/mscs721/RoomScheduler.java:196:	Parameter 'roomList' is not assigned and could be declared final
+src/com/marist/mscs721/RoomScheduler.java:196:	protectedMethodCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:197:	Local variable 'jsonArray' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:200:	Avoid instantiating new objects inside loops
+src/com/marist/mscs721/RoomScheduler.java:200:	Local variable 'roomDetails' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:201:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:201:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:202:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:202:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:208:	Local variable 'file' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:209:	Local variable 'csv' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:213:	Avoid printStackTrace(); use a logger call instead.
+src/com/marist/mscs721/RoomScheduler.java:219:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/marist/mscs721/RoomScheduler.java:219:	Parameter 'roomList' is not assigned and could be declared final
+src/com/marist/mscs721/RoomScheduler.java:219:	protectedMethodCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:220:	Local variable 'jsonArray' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:223:	Avoid instantiating new objects inside loops
+src/com/marist/mscs721/RoomScheduler.java:223:	Local variable 'roomDetails' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:224:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:224:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:225:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:225:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:226:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:226:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:226:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:226:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:226:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:226:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:228:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:228:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:228:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:228:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:228:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:228:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:230:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:230:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:230:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:230:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:230:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:230:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:232:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:232:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:238:	Local variable 'file' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:239:	Local variable 'csv' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:243:	Avoid printStackTrace(); use a logger call instead.
+src/com/marist/mscs721/RoomScheduler.java:249:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/marist/mscs721/RoomScheduler.java:249:	Parameter 'meetings' is not assigned and could be declared final
+src/com/marist/mscs721/RoomScheduler.java:249:	protectedMethodCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:250:	Local variable 'jsonArray' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:253:	Avoid instantiating new objects inside loops
+src/com/marist/mscs721/RoomScheduler.java:253:	Local variable 'meetingDetails' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:254:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:254:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:255:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:255:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:256:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:256:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:263:	Local variable 'file' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:264:	Local variable 'csv' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:269:	Avoid printStackTrace(); use a logger call instead.
+src/com/marist/mscs721/RoomScheduler.java:274:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/marist/mscs721/RoomScheduler.java:274:	Parameter 'filePath' is not assigned and could be declared final
+src/com/marist/mscs721/RoomScheduler.java:274:	protectedMethodCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:275:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/com/marist/mscs721/RoomScheduler.java:277:	Local variable 'readMeeting' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:278:	Local variable 'meetings' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:281:	Potential violation of Law of Demeter (object not created locally)
+src/com/marist/mscs721/RoomScheduler.java:282:	Avoid assignments in operands
+src/com/marist/mscs721/RoomScheduler.java:282:	Found 'DU'-anomaly for variable 'nextLine' (lines '282'-'294').
+src/com/marist/mscs721/RoomScheduler.java:282:	Potential violation of Law of Demeter (object not created locally)
+src/com/marist/mscs721/RoomScheduler.java:283:	Avoid instantiating new objects inside loops
+src/com/marist/mscs721/RoomScheduler.java:283:	Local variable 'dateFormat' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:283:	When instantiating a SimpleDateFormat object, specify a Locale
+src/com/marist/mscs721/RoomScheduler.java:285:	Avoid instantiating new objects inside loops
+src/com/marist/mscs721/RoomScheduler.java:285:	Local variable 'meeting' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:285:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:285:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:285:	Unnecessary use of fully qualified name 'java.sql.Timestamp' due to existing import 'java.sql.Timestamp'
+src/com/marist/mscs721/RoomScheduler.java:286:	Unnecessary use of fully qualified name 'java.sql.Timestamp' due to existing import 'java.sql.Timestamp'
+src/com/marist/mscs721/RoomScheduler.java:287:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:287:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:288:	Potential violation of Law of Demeter (object not created locally)
+src/com/marist/mscs721/RoomScheduler.java:290:	Potential violation of Law of Demeter (object not created locally)
+src/com/marist/mscs721/RoomScheduler.java:296:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/marist/mscs721/RoomScheduler.java:296:	Parameter 'filePath' is not assigned and could be declared final
+src/com/marist/mscs721/RoomScheduler.java:296:	protectedMethodCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:297:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/com/marist/mscs721/RoomScheduler.java:299:	Local variable 'readMeeting' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:300:	Local variable 'rooms' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:303:	Potential violation of Law of Demeter (object not created locally)
+src/com/marist/mscs721/RoomScheduler.java:304:	Avoid assignments in operands
+src/com/marist/mscs721/RoomScheduler.java:304:	Found 'DU'-anomaly for variable 'nextLine' (lines '304'-'319').
+src/com/marist/mscs721/RoomScheduler.java:304:	Potential violation of Law of Demeter (object not created locally)
+src/com/marist/mscs721/RoomScheduler.java:305:	Avoid instantiating new objects inside loops
+src/com/marist/mscs721/RoomScheduler.java:305:	Local variable 'dateFormat' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:305:	When instantiating a SimpleDateFormat object, specify a Locale
+src/com/marist/mscs721/RoomScheduler.java:307:	Avoid instantiating new objects inside loops
+src/com/marist/mscs721/RoomScheduler.java:307:	Local variable 'meeting' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:307:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:307:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:307:	Unnecessary use of fully qualified name 'java.sql.Timestamp' due to existing import 'java.sql.Timestamp'
+src/com/marist/mscs721/RoomScheduler.java:308:	Unnecessary use of fully qualified name 'java.sql.Timestamp' due to existing import 'java.sql.Timestamp'
+src/com/marist/mscs721/RoomScheduler.java:309:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:309:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:311:	Avoid instantiating new objects inside loops
+src/com/marist/mscs721/RoomScheduler.java:311:	Local variable 'room' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:311:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:313:	Potential violation of Law of Demeter (object not created locally)
+src/com/marist/mscs721/RoomScheduler.java:316:	Potential violation of Law of Demeter (object not created locally)
+src/com/marist/mscs721/RoomScheduler.java:321:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/com/marist/mscs721/RoomScheduler.java:321:	Parameter 'filePath' is not assigned and could be declared final
+src/com/marist/mscs721/RoomScheduler.java:321:	protectedMethodCommentRequirement Required
+src/com/marist/mscs721/RoomScheduler.java:322:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/com/marist/mscs721/RoomScheduler.java:324:	Local variable 'readMeeting' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:325:	Local variable 'roomList' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:328:	Potential violation of Law of Demeter (object not created locally)
+src/com/marist/mscs721/RoomScheduler.java:329:	Avoid assignments in operands
+src/com/marist/mscs721/RoomScheduler.java:329:	Found 'DU'-anomaly for variable 'nextLine' (lines '329'-'336').
+src/com/marist/mscs721/RoomScheduler.java:329:	Potential violation of Law of Demeter (object not created locally)
+src/com/marist/mscs721/RoomScheduler.java:330:	Avoid instantiating new objects inside loops
+src/com/marist/mscs721/RoomScheduler.java:330:	Local variable 'newRoom' could be declared final
+src/com/marist/mscs721/RoomScheduler.java:330:	Potential violation of Law of Demeter (method chain calls)
+src/com/marist/mscs721/RoomScheduler.java:331:	Potential violation of Law of Demeter (object not created locally)
+src/com/marist/mscs721/RoomScheduler.java:333:	Potential violation of Law of Demeter (object not created locally)

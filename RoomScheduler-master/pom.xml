@@ -1,0 +1,54 @@
+
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>RoomScheduler</groupId>
+	<artifactId>RoomScheduler</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>RoomScheduler</name>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source />
+					<target />
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<!-- Gson: Java to Json conversion -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.6.1</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+	<scm>
+		<connection>scm:https://github.com/himajakethiri/MSCS721-roomScheduler.git</connection>
+		<url>scm:https://github.com/himajakethiri/MSCS721-roomScheduler.git</url>
+		<developerConnection>scm:https://github.com/himajakethiri/MSCS721-roomScheduler.git</developerConnection>
+	</scm>
+
+	<description>RoomSchedular is a application in which we are going to add room,Schdule rooms for the meetings.
+In this the list of added rooms and list of scheduling details will be saved.The RoomSchedular makes use of JSON files to 
+import and export the details of scheduled rooms.It includes the room name,Start data,start time,end date,end time and subject.</description>
+</project>
