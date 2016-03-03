@@ -8,12 +8,13 @@ package com.marist.mscs721;
 
 import org.apache.commons.io.FileUtils;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
 import java.io.*;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.logging.Logger;
-
 import org.json.*;
 
 import au.com.bytecode.opencsv.CSVReader;
@@ -22,13 +23,15 @@ public class RoomScheduler {
 
 	protected static Scanner keyboard = new Scanner(System.in);
 	private static final Logger logger = Logger
-			.getLogger("com.marist.mscs721.RoomScheduler");
+			.getLogger("RoomScheduler.class");
 
 	// creating room scheduler based on room,meeting,scheduleroom methods
 	public static void main(String[] args) throws Exception {
 		Boolean end = false;
 		ArrayList<Room> rooms = new ArrayList<Room>();
 		ArrayList<Meeting> meetings = new ArrayList<Meeting>();
+		initializeLog();
+
 		// To perform operations on RoomSchedular by selecting a case
 		while (!end) {
 			switch (mainMenu()) {
@@ -81,6 +84,21 @@ public class RoomScheduler {
 
 	}
 
+	private static void initializeLog() {
+		Properties proper = new Properties();
+		try {
+			FileInputStream input = new FileInputStream(
+					"configuration/log4j.properties");
+			proper.load(input);
+			PropertyConfigurator.configure(proper);
+		} catch (FileNotFoundException e) {
+			logger.info("Unable to locate the logging properties file");
+		} catch (IOException e) {
+			logger.error("Error while reading the logging file");
+		}
+
+	}
+
 	/*
 	 * To print the list of scheduled rooms
 	 */
@@ -121,7 +139,7 @@ public class RoomScheduler {
 	 * To add rooms and checking the capacity of the rooms if a room is not
 	 * available then print the unavailable message
 	 */
-	protected static String addRoom(ArrayList<Room> roomList) {
+	public static String addRoom(ArrayList<Room> roomList) {
 		System.out.println("Add a room:");
 		String name = getRoomName();
 		System.out.println("Room capacity?");
@@ -162,7 +180,7 @@ public class RoomScheduler {
 			System.out.println(room.getName() + " - " + room.getCapacity());
 		}
 
-		System.out.println("---------------------");
+		logger.info("---------------------");
 
 		return roomList.size() + " Room(s)";
 	}
@@ -270,8 +288,10 @@ public class RoomScheduler {
 			FileUtils.writeStringToFile(file, csv);
 		} catch (IOException e) {
 			e.printStackTrace();
+			logger.error("Can't export the room details");
+
 		}
-		return "Successfully imported room details";
+		return "Successfully exported the  room details";
 
 	}
 
@@ -303,6 +323,7 @@ public class RoomScheduler {
 			FileUtils.writeStringToFile(file, csv);
 		} catch (IOException e) {
 			e.printStackTrace();
+			logger.error("can't export scheduling details to json ");
 		}
 		return csv;
 
@@ -330,6 +351,7 @@ public class RoomScheduler {
 		try {
 			FileUtils.writeStringToFile(file, csv);
 		} catch (IOException e) {
+			logger.error("Can't export meeting details to json file");
 
 			e.printStackTrace();
 		}
@@ -356,6 +378,7 @@ public class RoomScheduler {
 			meetings.add(meeting);
 		}
 		readMeeting.close();
+		logger.info("Meetings data imported from json files");
 
 		return "";
 
@@ -386,6 +409,7 @@ public class RoomScheduler {
 
 		}
 		readMeeting.close();
+		logger.info("Scheduling details imported from json");
 		return "";
 
 	}
