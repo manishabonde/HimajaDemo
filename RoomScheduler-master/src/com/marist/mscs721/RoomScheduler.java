@@ -35,7 +35,6 @@ public class RoomScheduler {
 		// To perform operations on RoomSchedular by selecting a case
 		while (!end) {
 			switch (mainMenu()) {
-
 			case 1:
 				logger.info(addRoom(rooms));
 				break;
