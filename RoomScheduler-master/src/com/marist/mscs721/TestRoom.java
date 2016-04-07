@@ -18,7 +18,8 @@ public class TestRoom {
 
 	@Test
 	public void addRoom() {
-		Room newRoom = new Room("room1", 30);
+		Room newRoom = new Room("room1", 20,"Lowell Thomas",
+		        "Marist Poughkeepsie Campus");
 	}
 
 	/*
@@ -26,11 +27,17 @@ public class TestRoom {
 	 */
 	@Test
 	public void getRoomName() {
-		Room newRoom = new Room("room2", 20);
+		Room newRoom = new Room("room1", 20,"Lowell Thomas",
+		         "Marist Poughkeepsie Campus");
 		String name = newRoom.getName();
-		Assert.assertEquals(name, "room2");
+		Assert.assertEquals(name, "room1");
 		int capacity = newRoom.getCapacity();
 		Assert.assertEquals(capacity, 20);
+		String building=newRoom.getBuilding();
+		Assert.assertEquals(building,"Lowell Thomas");
+		String location=newRoom.getLocation();
+		Assert.assertEquals(location,"Marist Poughkeepsie Campus");
+		
 
 	}
 
