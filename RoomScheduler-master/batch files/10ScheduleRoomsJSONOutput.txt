@@ -1,0 +1,13 @@
+
+[
+{"rooms":[{"Building":"hc","name":"room1","meetings":[{"startTime":"2016-1-10 10:10:00.0","stopTime":"2016-1-11 10:10:00.0","subject":"meeting1"}],
+{"rooms":[{"Building":"hc","name":"room2","meetings":[{"startTime":"2016-2-11 11:11:00.0","stopTime":"2016-2-12 11:11:00.0","subject":"meeting2"}],
+{"rooms":[{"Building":"hc","name":"room3","meetings":[{"startTime":"2016-3-12 12:12:00.0","stopTime":"2016-3-13 12:12:00.0","subject":"meeting3"}],
+{"rooms":[{"Building":"hc","name":"room4","meetings":[{"startTime":"2016-4-13 13:13:00.0","stopTime":"2016-4-14 13:13:00.0","subject":"meeting4"}],
+{"rooms":[{"Building":"hc","name":"room5","meetings":[{"startTime":"2016-5-14 14:14:00.0","stopTime":"2016-5-15 14:14:00.0","subject":"meeting5"}],
+{"rooms":[{"Building":"hc","name":"room6","meetings":[{"startTime":"2016-6-15 15:15:00.0","stopTime":"2016-6-16 15:15:00.0","subject":"meeting6"}],
+{"rooms":[{"Building":"hc","name":"room7","meetings":[{"startTime":"2016-7-16 16:16:00.0","stopTime":"2016-7-17 16:16:00.0","subject":"meeting7"}],
+{"rooms":[{"Building":"hc","name":"room8","meetings":[{"startTime":"2016-8-17 17:17:00.0","stopTime":"2016-8-18 17:17:00.0","subject":"meeting8"}],
+{"rooms":[{"Building":"hc","name":"room9","meetings":[{"startTime":"2016-9-18 18:18:00.0","stopTime":"2016-9-19 18:18:00.0","subject":"meeting9"}],
+{"rooms":[{"Building":"hc","name":"room10","meetings":[{"startTime":"2016-10-19 19:19:00.0","stopTime":"2016-10-20 19:19:00.0","subject":"meeting10"}],
+)]
