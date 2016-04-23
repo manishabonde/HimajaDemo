@@ -26,19 +26,20 @@
 				</configuration>
 			</plugin>
 			<plugin>
-        <artifactId>maven-jar-plugin</artifactId>
-        <configuration>
-          <archive>
-            <addMavenDescriptor>false</addMavenDescriptor>
-            <compress>true</compress>
-            <manifest>
-              <addClasspath>true</addClasspath>
-            <classpathPrefix>../lib/</classpathPrefix>
-            <mainClass>main.java.com.marist.mscs721.RoomScheduler</mainClass>
-            </manifest>
-          </archive>
-        </configuration>
-      </plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<archive>
+						<addMavenDescriptor>false</addMavenDescriptor>
+						<compress>true</compress>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>../lib/</classpathPrefix>
+							<mainClass>main.java.com.marist.mscs721.RoomScheduler</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -49,6 +50,46 @@
 				<artifactId>maven-surefire-report-plugin</artifactId>
 				<version>2.19.1</version>
 			</plugin>
+			<plugin>
+				<groupId>org.pitest</groupId>
+				<artifactId>pitest-maven</artifactId>
+				<version>1.1.9</version>
+				<configuration>
+					<targetClasses>
+						<param>main.java.com.marist.mscs721*</param>
+					</targetClasses>
+					<targetTests>
+						<param>*</param>
+					</targetTests>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>1.4</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<filters>
+								<filter>
+									<artifact>org.eclipse.jetty.orbit:javax.servlet</artifact>
+									<excludes>
+										<exclude>META-INF/ECLIPSEF.RSA</exclude>
+										<exclude>META-INF/ECLIPSEF.SF</exclude>
+										<exclude>META-INF/eclipse.inf</exclude>
+									</excludes>
+								</filter>
+							</filters>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
@@ -63,6 +104,7 @@
 				</executions>
 			</plugin>
 		</plugins>
+
 	</build>
 	<dependencies>
 		<!-- Gson: Java to Json conversion -->
@@ -72,6 +114,7 @@
 			<version>2.6.1</version>
 			<scope>compile</scope>
 		</dependency>
+
 		<!-- log4j dependency -->
 		<dependency>
 			<groupId>log4j</groupId>
