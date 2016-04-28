@@ -1,14 +1,14 @@
-package com.marist.mscs721;
-
-import static org.junit.Assert.*;
+package main.java.com.marist.mscs721;
 
 import java.sql.Timestamp;
+
 import java.util.ArrayList;
 
-import org.junit.Assert;
-import org.junit.Test;
+import main.java.com.marist.mscs721.Room;
 
-import com.marist.mscs721.Room;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 public class TestRoomScheduler {
 
@@ -102,30 +102,16 @@ public class TestRoomScheduler {
         Assert.assertNotEquals(subject, "test case");
         curRoom.addMeeting(meeting);
     }
-
     /*
      * Exporting the room details to the JSON file using
      * 
      * @method size() to check whether any room added(existed) or not
      */
+    @Ignore
     @Test
     public void exportRoomTest() {
-        addRoomTest();
-        RoomScheduler.saveRoomJSON(roomList);
+       addRoomTest();
+       RoomScheduler.exportIntoJson(roomList);
         Assert.assertEquals(roomList.size(), 1);
     }
-
-    /*
-     * Exporting the Schedule details to the JSON file using
-     * 
-     * @method size() to check whether any room added(existed) or not
-     */
-    @Test
-    public void exportScheduleTest() {
-
-        addRoomTest();
-        RoomScheduler.saveScheduleJSON(roomList);
-        Assert.assertEquals(roomList.size(), 1);
-    }
-
 }
