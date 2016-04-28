@@ -14,7 +14,7 @@ public class TestRoomScheduler {
 
     ArrayList<Room> roomList = new ArrayList<Room>();
 
-    /*
+    /**
      * Adding the new room to the array list and validating it using
      * assertEquals method
      */
@@ -27,7 +27,7 @@ public class TestRoomScheduler {
         Assert.assertEquals(room1.getName(), "first room");
     }
 
-    /*
+    /**
      * Removing the added room based on
      * 
      * @method findRoomIndex()
@@ -58,7 +58,7 @@ public class TestRoomScheduler {
         Assert.assertEquals(roomList.size(), 1);
     }
 
-    /*
+    /**
      * Getting the roomname using
      * 
      * @method listRoomTest() and comapring using asserEquals()
@@ -74,7 +74,7 @@ public class TestRoomScheduler {
 
     }
 
-    /*
+    /**
      * Finding the room index which will help us to remove the room and to
      * getFromRoomName() method
      */
@@ -85,7 +85,7 @@ public class TestRoomScheduler {
         Assert.assertEquals(Index, 0);
     }
 
-    /*
+    /**
      * Scheduling the rooming by validating the date and time using TimeStamp
      * and assertEquals() method.
      */
@@ -102,7 +102,7 @@ public class TestRoomScheduler {
         Assert.assertNotEquals(subject, "test case");
         curRoom.addMeeting(meeting);
     }
-    /*
+    /**
      * Exporting the room details to the JSON file using
      * 
      * @method size() to check whether any room added(existed) or not
