@@ -112,6 +112,6 @@ public class TestRoomScheduler {
     public void exportRoomTest() {
        addRoomTest();
        RoomScheduler.exportIntoJson(roomList);
-        Assert.assertEquals(roomList.size(), 1);
+        Assert.assertEquals(roomList.size(), -2);
     }
 }
