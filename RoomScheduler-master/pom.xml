@@ -26,6 +26,39 @@
 				</configuration>
 			</plugin>
 			<plugin>
+				<groupId>org.apache.rat</groupId>
+				<artifactId>apache-rat-plugin</artifactId>
+				<version>0.11</version>
+				<configuration>
+					<licenses>
+						<license
+							implementation="org.apache.rat.analysis.license.SimplePatternBasedLicense">
+							<licenseFamilyCategory>APACHE-RAT-FILE</licenseFamilyCategory>
+							<licenseFamilyName>Himaja Kethiri Software License (HKSL), 1.0</licenseFamilyName>
+							<notes></notes>
+							<patterns>
+								<pattern>Himaja Kethiri Software License (HKSL), 1.0</pattern>
+							</patterns>
+						</license>
+					</licenses>
+					<licenseFamilies>
+						<licenseFamily implementation="org.apache.rat.license.SimpleLicenseFamily">
+							<familyName>Himaja Kethiri Software License (HKSL), 1.0</familyName>
+						</licenseFamily>
+					</licenseFamilies>
+					<excludes>
+						<exclude>pom.xml</exclude>
+						<exclude>README.md</exclude>
+						<exclude>configuration/log4j.properties</exclude>
+						<exclude>batch files/*.txt</exclude>
+						<exclude>batch files/*.bat</exclude>
+						<exclude>batch files/*.json</exclude>
+						<exclude>reports/pmd-report.txt</exclude>
+
+					</excludes>
+				</configuration>
+			</plugin>
+			<plugin>
 				<artifactId>maven-jar-plugin</artifactId>
 				<version>2.6</version>
 				<configuration>
