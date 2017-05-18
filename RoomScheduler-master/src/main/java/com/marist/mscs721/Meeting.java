@@ -34,7 +34,7 @@ public class Meeting {
 		return this.getStartTime().toString() + " - " + this.getStopTime()
 				+ ": " + getSubject();
 	}
-
+	/*test comment */
 	public Timestamp getStartTime() {
 		return startTime;
 	}
